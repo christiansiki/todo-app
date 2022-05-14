@@ -22,72 +22,72 @@
     </picture>
   </div>
 
-  <header>
-    <h1 class="title">Todo</h1>
-    <img class="theme-toggle"src="./images/icon-sun.svg" alt="light-dark toggle icon-sun">
-  </header>
-
-
-  <main>
-    <div class="todo-list">
-      
-      <div class="todo-header">
-        <div class="task-creator">
-          <form action="">
-            <input
-              class="new-task"
-              type="text"
-              placeholder="Create a new todo"
-              aria-label="new task name"
-            />
-          </form>
-          <button class="btn btn-create" aria-label="create new task">+</button>
+  <div class="container">
+    <header>
+      <h1 class="title">Todo</h1>
+      <img class="theme-toggle"src="./images/icon-sun.svg" alt="light-dark toggle icon-sun">
+    </header>
+    <main>
+      <div class="todo-list">
+    
+        <div class="todo-header">
+          <div class="task-creator">
+            <form action="">
+              <input
+                class="new-task"
+                type="text"
+                placeholder="Create a new todo"
+                aria-label="new task name"
+              />
+            </form>
+            <button class="btn btn-create" aria-label="create new task">+</button>
+          </div>
+        </div>
+        <div class="todo-body">
+          <div class="tasks">
+            <div class="task">
+              <input
+                type="checkbox"
+                id="task-1"
+              />
+              <label for="task-1">
+                <span class="custom-checkbox"></span>
+                Jog around the park 3x
+              </label>
+              <button class="delete-button" aria-label="delete task">
+                <img src="./images/icon-cross.svg" alt="delete-button">
+              </button>
+            </div>
+            <!-- Task 1 -->
+            <div class="task">
+              <input type="checkbox" id="task-2" />
+              <label for="task-2">
+                <span class="custom-checkbox"></span>
+                Task 2
+              </label>
+              <button class="btn btn-delete" aria-label="delete task">
+                <img src="./images/icon-cross.svg" alt="delete-button">
+              </button>
+            </div>
+            <!-- Task 2 -->
+          </div>
+        </div>
+        <div class="todo-footer">
+          <p class="task-count">2 items left</p>
+          <button class="btn btn-clear">Clear Completed</button>
+        </div>
+        <div class="radio-btns">
+          <input type="radio" name="task-btns" id="all-tasks" value="all-tasks">
+          <label for="all-tasks">All</label>
+          <input type="radio" name="task-btns" id="active-tasks" value="active-tasks">
+          <label for="active-tasks">Active</label>
+          <input type="radio" name="task-btns" id="completed-tasks" value="completed-tasks">
+          <label for="completed-tasks">Completed</label>
         </div>
       </div>
-
-      <div class="todo-body">
-        <div class="tasks">
-          <div class="task">
-            <input
-              type="checkbox" 
-              id="task-1"
-            />
-            <label for="task-1">
-              <span class="custom-checkbox"></span>
-              Jog around the park 3x
-            </label>
-            <button class="delete-button" aria-label="delete task">
-              <img src="./images/icon-cross.svg" alt="delete-button">
-            </button>
-          </div>
-          <!-- Task 1 -->
-          <div class="task">
-            <input type="checkbox" id="task-2" />
-            <label for="task-2">
-              <span class="custom-checkbox"></span>
-              Task 2
-            </label>
-            <button class="btn btn-delete" aria-label="delete task">
-              <img src="./images/icon-cross.svg" alt="delete-button">
-            </button>
-          </div>
-          <!-- Task 2 -->
-        </div>
-      </div>
-
-      <div class="todo-footer">
-        <p class="task-count">2 items left</p>
-        <button class="btn btn-clear">Clear Completed</button>
-      </div>
-
-      <div class="task-buttons">
-        <button class="btn btn-tasks">All</button>
-        <button class="btn btn-tasks">Active</button>
-        <button class="btn btn-tasks">Completed</button>
-      </div>
-    </div>
-
-    <p>Drag and drop to reorder list</p>
+      <p>Drag and drop to reorder list</p>
+  </div>
+  
   </main>
 
   <footer>
