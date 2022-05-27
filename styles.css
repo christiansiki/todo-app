@@ -87,6 +87,7 @@ body {
    display: flex;
    align-items: center;
    flex-grow: 1;
+   flex-direction: row-reverse;
  }
 
  .task-creator form {
@@ -107,15 +108,26 @@ body {
    color: var(--vd-gray-blue-one-dark);
  }
 
-.create-task {
+ .create-task {
   width: 3em;
-  
+  display: flex;
+  justify-content: center;
 }
 
-.checkbox {
+/*.checkbox {
   height: 30px;
   width: 30px;
   border: 1px solid white;
+} */
+.btn {
+  background-color: transparent;
+  border: none;
+}
+.btn-create {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  border: 1px solid var(--vd-gray-blue-two-dark);
 }
 
 
