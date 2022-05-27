@@ -36,13 +36,17 @@
               <input
                 class="new-task"
                 type="text"
-                placeholder="Create a new todo"
+                placeholder="Create a new todo..."
                 aria-label="new task name"
               />
             </form>
-            <button class="btn btn-create" aria-label="create new task">+</button>
+            <div class="create-task">
+              <span class="checkbox"></span>
+            </div>
+            <!-- <button class="btn btn-create" aria-label="create new task">+</button> -->
           </div>
         </div>
+
         <div class="todo-body">
           <div class="tasks">
             <div class="task">
@@ -72,6 +76,7 @@
             <!-- Task 2 -->
           </div>
         </div>
+
         <div class="todo-footer">
           <p class="task-count">2 items left</p>
           <button class="btn btn-clear">Clear Completed</button>
