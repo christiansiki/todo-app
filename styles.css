@@ -122,14 +122,44 @@ body {
 .btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .btn-create {
   height: 2em;
   width: 2em;
   border-radius: 50%;
   border: 1px solid var(--vd-gray-blue-two-dark);
+  transition: all 0.25s linear;
 }
 
+.btn-create:hover, .btn-create:focus {
+  background: linear-gradient(135deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
+}
+
+.todo-body {
+  margin-block: 2em;
+  background-color: var(--vd-desat-blue);
+  border-radius: 6px;
+}
+
+.task {
+  width: 100%;
+  padding: .75em;
+  border-bottom: 1px solid var(--vd-gray-blue-two-dark);
+  display: flex;
+  border: 1px solid green;
+}
+
+.delete-button {
+  border: 1px solid yellow;
+  width: 3em;
+  height: 3em;
+  background: transparent;
+  background-image: url(./images/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
 
 
 
